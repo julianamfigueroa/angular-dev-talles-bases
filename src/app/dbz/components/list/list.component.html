@@ -1,0 +1,12 @@
+
+<h4>Listado</h4>
+<ul>
+  <li *ngFor="let x of charactersList;">
+  <!-- <li *ngFor="let x of charactersList; let i = index;"> -->
+    <div>
+      {{x.name}} - {{x.power}}
+    </div>
+     <button (click)="onDeleteID(x.id)">X</button>
+     <!-- <button (click)="onDelete(i)">X</button> -->
+    </li>
+</ul>

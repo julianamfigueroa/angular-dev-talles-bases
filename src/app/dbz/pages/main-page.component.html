@@ -1,0 +1,18 @@
+<h1>Personajes</h1>
+
+<!--
+Parentesis : Eventos
+Llaves cuadradas : Atributos
+-->
+
+  <!-- (onDeletebyID)="dbzService.ondeleteByID($event)" -->
+<dbz-list
+  (onDeletebyID)="deleteCharacter($event)"
+  [charactersList]="characters">
+</dbz-list>
+
+
+  <!-- (onNewCharacter)="dbzService.onNewCharacter($event)"> -->
+<dbz-add
+  (onNewCharacter)="createCharacter($event)">
+</dbz-add>

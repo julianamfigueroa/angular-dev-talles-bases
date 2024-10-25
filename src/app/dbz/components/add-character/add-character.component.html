@@ -1,0 +1,23 @@
+
+<div class="row">
+
+  <div class="col">
+    <!-- <form> -->
+    <form (ngSubmit)="emitCharacter()">
+      <input
+        type="text"
+        [(ngModel)]="character.name"
+        name="name"
+        placeholder="Nombre">
+      <input
+        type="number"
+        [(ngModel)]="character.power"
+        name="power"
+        placeholder="Poder">
+      <button type="submit">Agregar</button>
+      <!-- <button type="submit" (click)="emitCharacter()" >Agregar</button> -->
+    </form>
+    <pre> {{character | json}} </pre>
+  </div>
+
+</div>
